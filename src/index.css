@@ -1,0 +1,161 @@
+/* write your css here */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+.title{
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1,17,160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden ;
+}
+
+.cards{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.card{
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+
+}
+
+.image{
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info{
+    margin: 20px 5px;
+}
+
+.tour-price{
+    color: #1faa59;
+    font-size: 1.3rem;
+} 
+
+.tour-name{
+    font-size: 1.5rem;
+}
+
+.read-more{
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-red{
+    margin-top: 18px;
+    border: 2px solid red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 280px;
+    font-size: larger;
+    color: black;
+    background-color: rgb(255, 224, 224);
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.btn-red:hover{
+  background: red;
+  color: white;
+  transition: all 0.2s;
+}
+
+.refresh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn-white{
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+    cursor: pointer;
+   
+}
+
+.btn-white:hover{
+    background-color: azure;
+}
+
+@media only screen and (max-width: 650px) {
+    .title {
+        font-size: 1.8rem;
+        margin: 6vh;
+        border: 3px dashed rgb(1,17,160);
+        border-radius: 20px;
+        padding: 1vh 5vw;
+    }
+   
+    .card{
+        width: 300px;
+        height: max-content;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    
+    }
+    .image{
+        width: 300px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+   
+    .btn-red{
+        margin-top: 18px;
+        border: 2px solid red;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        width: 200px;
+        font-size: larger;
+        color: black;
+        background-color: rgb(255, 224, 224);
+        font-weight: bolder;
+        cursor: pointer;
+    
+    }
+  }
